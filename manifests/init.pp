@@ -1,6 +1,7 @@
 class kermitqrecv {
 
     include yum
+    include yum::kermit
     include kermit
 
     package { 'kermit-mqrecv' :
