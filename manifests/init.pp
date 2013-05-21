@@ -14,7 +14,7 @@ class kermitqrecv {
         owner   => 'root',
         group   => 'root',
         mode    => '0644',
-        source  => 'puppet:///modules/kermitqrecv/q-public.pem',
+        source  => 'puppet:///private/kermitqrecv/q-public.pem',
         require => [ File['/etc/kermit/ssl/'], Package['mcollective-common'] ],
     }
 
